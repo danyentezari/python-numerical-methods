@@ -33,6 +33,22 @@ def cos(theta):
     
     return term
 
+# print(cos(10))
 
 
-print(cos(10))
+def diff(x, f):
+    h = 0.001
+    deltax = f(x) + f(x + h)
+    deltah = h
+    derivative = deltax/deltah
+    return derivative
+
+
+x = 1
+f = lambda x: pow(x, 2)
+
+
+# print(diff(x, f))
+
+print(2**3)
+
